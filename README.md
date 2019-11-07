@@ -10,10 +10,10 @@ Check valid versions on:
             version             = 1.0
             prefix              = "${var.prefix}"
             profile             = var.profile
-            ami         = "${var.ami}"
-            height      = "${var.height}"
-            width       = "${var.width}"
-            placeholder = "${var.placeholder}"
+            ami                 = "${var.ami}"
+            height              = "${var.height}"
+            width               = "${var.width}"
+            placeholder         = "${var.placeholder}"
        }
 
 
