@@ -3,11 +3,11 @@
 ## Usage
 
 Check valid versions on:
-* Github Releases: <https://github.com/jeromebaude/terraform-hashicat-module>
+* Github Releases: <https://github.com/jeromebaude/terraform-aws-hashicat-module>
 
         module "hashicat-aws-instance" {  
-            source              = "app.terraform.io/jerome-playground-2019/hashicat-aws-instance"
-            version             = 1.0
+            source              = "app.terraform.io/jerome-playground-2019/hashicat-module/aws"
+            version             = 1.1.1
             prefix              = "${var.prefix}"
             profile             = "${var.profile}"
             ami                 = "${var.ami}"
