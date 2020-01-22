@@ -7,7 +7,7 @@ Check valid versions on:
 
         module "hashicat-aws-instance" {  
             source              = "app.terraform.io/jerome-playground-2019/hashicat-module/aws"
-            version             = 1.1.2
+            version             = 1.1.4
             prefix              = "${var.prefix}"
             profile             = "${var.profile}"
             height              = "${var.height}"
