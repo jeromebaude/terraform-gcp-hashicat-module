@@ -20,8 +20,6 @@ Check valid versions on:
 
 prefix: Your name
 
-ami: AWS AMI ID
-
 height: height of the image
 
 width: width of the image
