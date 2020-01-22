@@ -1,6 +1,6 @@
 # Outputs file
 output "catapp_url" {
-  value = "http://${aws_eip.hashicat.public_ip}"
+  value = "${aws_eip.hashicat.public_ip}"
 }
 
 #output "private_key" {
