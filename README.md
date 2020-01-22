@@ -10,7 +10,6 @@ Check valid versions on:
             version             = 1.1.2
             prefix              = "${var.prefix}"
             profile             = "${var.profile}"
-            ami                 = "${var.ami}"
             height              = "${var.height}"
             width               = "${var.width}"
             placeholder         = "${var.placeholder}"
