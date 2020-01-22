@@ -6,7 +6,7 @@ Check valid versions on:
 * Github Releases: <https://github.com/jeromebaude/terraform-aws-hashicat-module>
 
         module "hashicat-aws-instance" {  
-            source              = "app.terraform.io/jerome-playground-2019/hashicat-module/aws"
+            source              = "app.terraform.io/jerome-playground/hashicat-module/aws"
             version             = 1.1.5
             prefix              = var.prefix
             profile             = var.profile
