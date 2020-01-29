@@ -3,13 +3,13 @@
 ## Usage
 
 Check valid versions on:
-* Github Releases: <https://github.com/jeromebaude/terraform-aws-hashicat-module>
+* Github Releases: <https://github.com/jeromebaude/terraform-gcp-hashicat-module>
 
         module "hashicat-aws-instance" {  
-            source              = "app.terraform.io/jerome-playground/hashicat-module/aws"
-            version             = 1.1.5
+            source              = "app.terraform.io/jerome-playground/hashicat-module/gcp"
+            version             = 1.0.0
             prefix              = var.prefix
-            profile             = var.profile
+            project		= var.project
             height              = var.height
             width               = var.width
             placeholder         = var.placeholder
@@ -19,6 +19,8 @@ Check valid versions on:
 ## Input values
 
 prefix: Your name
+
+project: Your GCP project name
 
 height: height of the image
 

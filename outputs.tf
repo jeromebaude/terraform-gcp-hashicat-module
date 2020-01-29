@@ -1,8 +1,4 @@
 # Outputs file
 output "catapp_url" {
-  value = "${aws_eip.hashicat.public_ip}"
+  value = "http://${google_compute_instance.hashicat.network_interface.0.access_config.0.nat_ip}"
 }
-
-#output "private_key" {
-#  value = "${tls_private_key.hashicat.private_key_pem}"
-#}

@@ -5,43 +5,28 @@
 # Terraform code. If you create a variable with no default, the user will be
 # prompted to enter it (or define it via config file or command line flags.)
 
+variable "project" {
+  description = "ID of your GCP project. Make sure you set this up before running this terraform code.  REQUIRED."
+}
+
 variable "prefix" {
-  description = "This prefix will be included in the name of most resources."
+  description = "This prefix will be included in the name of some resources. You can use your own name or any other short string here."
+  default     = "workshop"
 }
 
 variable "region" {
   description = "The region where the resources are created."
-  default     = "eu-north-1"
+  default     = "us-central1"
 }
 
-variable "ami" {
-  description = "The AMI id being used"
-  default     = "ami-0f99dca6fd2ed7c0a"
+variable "zone" {
+  description = "The region where the resources are created."
+  default     = "us-central1-a"
 }
 
-variable "enable_dns_hostnames" {
-  description = "enable dns hostnames"
-  default     = "true"
-}
-
-variable "address_space" {
-  description = "The address space that is used by the virtual network. You can supply more than one address space. Changing this forces a new resource to be created."
-  default     = "10.0.0.0/16"
-}
-
-variable "subnet_prefix" {
-  description = "The address prefix to use for the subnet."
-  default     = "10.0.10.0/24"
-}
-
-variable "instance_type" {
-  description = "Specifies the AWS instance type."
-  default     = "t3.nano"
-}
-
-variable "admin_username" {
-  description = "Administrator user name for mysql"
-  default     = "hashicorp"
+variable "machine_type" {
+  description = "Specifies the GCP instance type."
+  default     = "f1-micro"
 }
 
 variable "height" {
