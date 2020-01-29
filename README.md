@@ -9,7 +9,6 @@ Check valid versions on:
             source              = "app.terraform.io/jerome-playground/hashicat-module/gcp"
             version             = 1.0.0
             prefix              = var.prefix
-            project		= var.project
             height              = var.height
             width               = var.width
             placeholder         = var.placeholder
@@ -19,8 +18,6 @@ Check valid versions on:
 ## Input values
 
 prefix: Your name
-
-project: Your GCP project name
 
 height: height of the image
 
