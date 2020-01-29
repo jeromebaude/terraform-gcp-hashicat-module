@@ -7,8 +7,9 @@ Check valid versions on:
 
         module "hashicat-aws-instance" {  
             source              = "app.terraform.io/jerome-playground/hashicat-module/gcp"
-            version             = 1.0.1
+            version             = 1.0.2
             prefix              = var.prefix
+            project             = var.project
             height              = var.height
             width               = var.width
             placeholder         = var.placeholder
@@ -18,6 +19,8 @@ Check valid versions on:
 ## Input values
 
 prefix: Your name
+
+project: Your GCP project name
 
 height: height of the image
 
