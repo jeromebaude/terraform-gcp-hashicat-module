@@ -7,7 +7,7 @@ Check valid versions on:
 
         module "hashicat-aws-instance" {  
             source              = "app.terraform.io/jerome-playground/hashicat-module/gcp"
-            version             = 1.0.0
+            version             = 1.0.1
             prefix              = var.prefix
             height              = var.height
             width               = var.width
